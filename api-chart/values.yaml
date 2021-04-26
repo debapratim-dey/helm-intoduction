@@ -47,7 +47,7 @@ securityContext: {}
 service:
   type: LoadBalancer
   port: 80
-  name: fluxcd-lb #name of service
+  name: fluxcd-api-lb #name of service
 
 ingress:
   enabled: false
