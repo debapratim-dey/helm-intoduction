@@ -1,12 +1,12 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: flux-api-test
-  namespace: myrelease
+  name: api-test-for-flux
+  namespace: fluxcd
   annotations:
     fluxcd.io/automated: "true"
 spec:
-  releaseName: flux-api-test
+  releaseName: api-test-for-flux
   forceUpgrade: true
   timeout: 300 #300 is default even if not specified
   wait: true
