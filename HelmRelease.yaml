@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: flux-api-test
-  namespace: default
+  namespace: myrelease
   annotations:
     fluxcd.io/automated: "true"
 spec:
