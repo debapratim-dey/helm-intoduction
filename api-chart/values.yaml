@@ -47,7 +47,7 @@ securityContext: {}
 service:
   type: LoadBalancer
   port: 80
-  name: helm-flask-lb #name of service
+  name: fluxcd-lb #name of service
 
 ingress:
   enabled: false
