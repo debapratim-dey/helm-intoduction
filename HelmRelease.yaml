@@ -2,11 +2,11 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: myapi
-  namespace: fluxdemo
+  namespace: default
   annotations:
     fluxcd.io/automated: "true"
 spec:
-  releaseName: myapi
+  releaseName: api-demo
   forceUpgrade: true
   timeout: 300 #300 is default even if not specified
   wait: true
