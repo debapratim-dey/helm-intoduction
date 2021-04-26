@@ -1,3 +1,4 @@
+---
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
@@ -20,4 +21,4 @@ spec:
   values:
     image:
       repository: deb0pratim/dummy_flask_app
-      tag: "1.1"
+      tag: "1.2"
