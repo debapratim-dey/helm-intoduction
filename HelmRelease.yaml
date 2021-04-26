@@ -1,0 +1,21 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: myapi
+  namespace: experiment
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: myapi
+  forceUpgrade: true
+  timeout: 300 #300 is default even if not specified
+  wait: true
+  maxHistory: 10
+  chart:
+    git: git@github.com:debapratim-dey/helm-intoduction
+    ref: master
+    path: api-chart/
+  values:
+    image:
+      repository: deb0pratim/dummy_flask_app
+      tag: "1.1"
