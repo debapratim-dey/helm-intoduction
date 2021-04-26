@@ -11,6 +11,8 @@ spec:
   timeout: 300 #300 is default even if not specified
   wait: true
   maxHistory: 10
+  git:
+    timeout: 300s
   chart:
     git: git@github.com:debapratim-dey/helm-intoduction
     ref: master
