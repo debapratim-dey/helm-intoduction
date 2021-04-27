@@ -21,4 +21,4 @@ spec:
   values:
     image:
       repository: deb0pratim/dummy_flask_app
-      tag: "1.2"
+      tag: "1.3"
